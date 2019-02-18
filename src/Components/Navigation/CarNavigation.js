@@ -9,16 +9,16 @@ const CarNavigation = () => {
   return(
     <div className="brands-wrapper">
       <div className="brands">
-        <a href="#"><img className="brand-logo" src={Audi}></img></a>
+        <a href="#"><img alt="audi logo" className="brand-logo" src={Audi}></img></a>
       </div>
       <div className="brands">
-        <a href="#"><img className="brand-logo" src={Bmw}></img></a>
+        <a href="#"><img alt="bmw logo" className="brand-logo" src={Bmw}></img></a>
       </div>
       <div className="brands">
-        <a href="#"><img className="brand-logo" src={Mercedes}></img></a>
+        <a href="#"><img alt="mercedes logo" className="brand-logo" src={Mercedes}></img></a>
       </div>
       <div className="brands">
-        <a href="#"><img className="brand-logo" src={Volkswagen}></img></a>
+        <a href="#"><img alt="volkswagen logo" className="brand-logo" src={Volkswagen}></img></a>
       </div>
     </div>
   );
