@@ -4,21 +4,22 @@ import Audi from '../../Images/Car-Logo/audi-logo.png';
 import Bmw from '../../Images/Car-Logo/bmw-logo.png';
 import Mercedes from '../../Images/Car-Logo/mercedes-logo.png';
 import Volkswagen from '../../Images/Car-Logo/volkswagen-logo.png';
+import { Link, NavLink } from 'react-router-dom';
 
 const CarNavigation = () => {
   return(
     <div className="brands-wrapper">
       <div className="brands">
-        <a href="#"><img alt="audi logo" className="brand-logo" src={Audi}></img></a>
+        <Link to="audi"><img alt="audi logo" className="brand-logo" src={Audi}></img></Link>
       </div>
       <div className="brands">
-        <a href="#"><img alt="bmw logo" className="brand-logo" src={Bmw}></img></a>
+        <Link to="bmw"><img alt="bmw logo" className="brand-logo" src={Bmw}></img></Link>
       </div>
       <div className="brands">
-        <a href="#"><img alt="mercedes logo" className="brand-logo" src={Mercedes}></img></a>
+        <Link to="mercedes"><img alt="mercedes logo" className="brand-logo" src={Mercedes}></img></Link>
       </div>
       <div className="brands">
-        <a href="#"><img alt="volkswagen logo" className="brand-logo" src={Volkswagen}></img></a>
+        <Link to="volkswagen"><img alt="volkswagen logo" className="brand-logo" src={Volkswagen}></img></Link>
       </div>
     </div>
   );

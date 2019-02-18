@@ -20,9 +20,11 @@
 
 .brands:hover {
   transform: translateY(10px);
-} 
+}
 
-
+.brands:active {
+  border-top: 10px solid var(--color-white);
+}
 
 .brand-logo {
   width: 100%;
