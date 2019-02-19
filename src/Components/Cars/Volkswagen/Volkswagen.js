@@ -1,35 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../css/cars.css';
-import beetle from '../../../Images/Volkswagen/beetle.png';
-import golf from '../../../Images/Volkswagen/golf.png';
-import jetta from '../../../Images/Volkswagen/jetta.png';
-import passat from '../../../Images/Volkswagen/passat.png';
+import { inject, observer } from 'mobx-react';
 
-const Volkswagen = () => {
-  return(
-    <div className="cars-wrapper">
-      <div className="car-model">
-        <img className="car-image" alt="volkswagen beetle" src={beetle}></img>
-        <h4 className="car-title">VW Beetle</h4>
-        <a href="#" className="view-more">View more</a>
+@inject('CarStore')
+@observer
+class Volkswagen extends Component {
+  render() {
+    const { CarStore } = this.props;
+    return (
+      <div className="cars-wrapper">
+        {CarStore.volkswagen.map((car, i) => (
+          <div className="car-model" key={i}>
+            <img className="car-image" alt={car.name} src={car.src}></img>
+            <h4 className="car-title">{car.name}</h4>
+            <a href="#" className="view-more">View more</a>
+          </div>
+        ))}
       </div>
-      <div className="car-model">
-        <img className="car-image" alt="volkswagen golf 7" src={golf}></img>
-        <h4 className="car-title">VW Golf VII</h4>
-        <a href="#" className="view-more">View more</a>
-      </div>
-      <div className="car-model">
-        <img className="car-image" alt="volkswagen jetta" src={jetta}></img>
-        <h4 className="car-title">VW Jetta</h4>
-        <a href="#" className="view-more">View more</a>
-      </div>
-      <div className="car-model">
-        <img className="car-image" alt="volkswagen passat" src={passat}></img>
-        <h4 className="car-title">VW Passat</h4>
-        <a href="#" className="view-more">View more</a>
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Volkswagen;

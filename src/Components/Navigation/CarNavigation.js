@@ -4,7 +4,7 @@ import Audi from '../../Images/Car-Logo/audi-logo.png';
 import Bmw from '../../Images/Car-Logo/bmw-logo.png';
 import Mercedes from '../../Images/Car-Logo/mercedes-logo.png';
 import Volkswagen from '../../Images/Car-Logo/volkswagen-logo.png';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const CarNavigation = () => {
   return(
