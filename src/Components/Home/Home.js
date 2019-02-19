@@ -6,7 +6,7 @@ import Audi from '../Cars/Audi/Audi';
 import Bmw from '../Cars/Bmw/Bmw';
 import Mercedes from '../Cars/Mercedes/Mercedes';
 import Volkswagen from '../Cars/Volkswagen/Volkswagen';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return(

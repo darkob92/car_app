@@ -14,7 +14,7 @@ class Audi extends Component  {
           <div className="car-model" key={i}>
             <img className="car-image" alt={car.name} src={car.src}></img>
             <h4 className="car-title">{car.name}</h4>
-            <a href="#" className="view-more">View more</a>
+            <a href={car.link} className="view-more" target="_blank" rel="noopener noreferrer">View more</a>
           </div>
         ))}
       </div>
