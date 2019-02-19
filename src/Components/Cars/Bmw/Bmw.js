@@ -1,9 +1,9 @@
 import React from 'react';
 import '../css/cars.css';
-import m2 from '../../Images/Bmw/m2.png';
-import series4 from '../../Images/Bmw/series4.png';
-import series6 from '../../Images/Bmw/series6.png';
-import x6 from '../../Images/Bmw/x6.png';
+import m2 from '../../../Images/Bmw/m2.png';
+import series4 from '../../../Images/Bmw/series4.png';
+import series6 from '../../../Images/Bmw/series6.png';
+import x6 from '../../../Images/Bmw/x6.png';
 
 const Bmw = () => {
   return(

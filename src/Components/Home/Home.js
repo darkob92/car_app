@@ -2,10 +2,10 @@ import React from 'react';
 import CarNavigation from '../Navigation/CarNavigation';
 import './home.css';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Audi from '../Audi/Audi';
-import Bmw from '../Bmw/Bmw';
-import Mercedes from '../Mercedes/Mercedes';
-import Volkswagen from '../Volkswagen/Volkswagen';
+import Audi from '../Cars/Audi/Audi';
+import Bmw from '../Cars/Bmw/Bmw';
+import Mercedes from '../Cars/Mercedes/Mercedes';
+import Volkswagen from '../Cars/Volkswagen/Volkswagen';
 import { Link, NavLink } from 'react-router-dom';
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
             <li className="navigation-item"><a className="navigation-link" href="#">Contact Us</a></li>
           </ul>
         </div>
-        <Route exact path='/' component={Home} />
+        <Route path='home' component={Home} />
         <CarNavigation />
         <Route path='/audi' component={Audi} />
         <Route path='/bmw' component={Bmw} />

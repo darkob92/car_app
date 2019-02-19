@@ -1,9 +1,9 @@
 import React from 'react';
 import '../css/cars.css';
-import beetle from '../../Images/Volkswagen/beetle.png';
-import golf from '../../Images/Volkswagen/golf.png';
-import jetta from '../../Images/Volkswagen/jetta.png';
-import passat from '../../Images/Volkswagen/passat.png';
+import beetle from '../../../Images/Volkswagen/beetle.png';
+import golf from '../../../Images/Volkswagen/golf.png';
+import jetta from '../../../Images/Volkswagen/jetta.png';
+import passat from '../../../Images/Volkswagen/passat.png';
 
 const Volkswagen = () => {
   return(

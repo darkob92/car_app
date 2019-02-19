@@ -1,9 +1,9 @@
 import React from 'react';
 import '../css/cars.css';
-import cClass from '../../Images/Mercedes/c-class.png';
-import gla from '../../Images/Mercedes/gla.png';
-import gClass from '../../Images/Mercedes/g-class.png';
-import slk from '../../Images/Mercedes/slk.png';
+import cClass from '../../../Images/Mercedes/c-class.png';
+import gla from '../../../Images/Mercedes/gla.png';
+import gClass from '../../../Images/Mercedes/g-class.png';
+import slk from '../../../Images/Mercedes/slk.png';
 
 const Mercedes = () => {
   return(
