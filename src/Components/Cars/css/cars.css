@@ -4,12 +4,31 @@
   margin: 2rem auto;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .cars-wrapper {
+    height: 50rem;
+  }
 }
 
 .car-model {
   margin-top: 5rem;
   height: 22rem;
   width: 25rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .car-model {
+    margin-top: 7rem;
+  }
+}
+
+@media only screen and (max-width: 935px) {
+  .car-model {
+    margin-bottom: 3rem;
+  }
 }
 
 .car-image {

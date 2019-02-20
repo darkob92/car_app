@@ -12,3 +12,19 @@ body {
   background-color: var(--color-black);
   overflow: hidden;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow: initial;
+  }
+}
+
+@media only screen and (max-width: 935px) {
+  body {
+    overflow: initial;
+  }
+}
+
+.App {
+  text-align: center;
+}
